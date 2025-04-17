@@ -54,7 +54,7 @@ Tools were designed and developed to simulate malicious traffic in the **RAN** a
 
 #  IV. Precautions
 
-- This dataset is **only for academic research** and **5G network security technology development**. 🚫 It is **prohibited** from being used for any **illegal purposes**.
+- This dataset is **only for academic research** and **5G network security technology development**. It is **prohibited** from being used for any **illegal purposes**.
 
 - When using the dataset, relevant **laws**, **regulations**, and **ethical norms** should be followed to protect **data privacy and security**.
 
