@@ -7,7 +7,7 @@ The **5GCID (5GC Intrusion Detection System Data Set)** is specifically construc
 
 #  II. Dataset Content
 
-## 🔐 (I) Threat Case Data
+## (I) Threat Case Data
 
 ### 🛑 AMF DoS Attack Data
 
@@ -34,7 +34,7 @@ The **5GCID (5GC Intrusion Detection System Data Set)** is specifically construc
 
 ---
 
-## ✅ (II) Normal Case Data
+## (II) Normal Case Data
 
 A normal dataset corresponding to the **Ng interface** of the above threat cases is provided. It is designed for **comparative analysis**, helping researchers better identify abnormal traffic.
 
