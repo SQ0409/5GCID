@@ -1,13 +1,63 @@
-# 5GCID
-Data Set of 5GC Intrusion Detection System
-I. Dataset Introduction
-The 5GCID (5GC Intrusion Detection System Data Set) dataset is specifically constructed for the research of 5G Core Network (5GC) intrusion detection systems. With the widespread application of 5G networks, the 5GC faces numerous security threats. Existing deep - learning (DL) - based intrusion detection methods are restricted by the lack of suitable datasets. This dataset integrates data related to security vulnerabilities in the Radio Access Network (RAN) domain and the 5GC user domain, providing strong support for 5GC intrusion detection research.
-II. Dataset Content
-(I) Threat Case Data
-AMF DoS Attack Data: Data related to the Denial - of - Service (DoS) attack against the Access and Mobility Management Function (AMF) in the 5GC control plane. It simulates untrusted Base Stations (gNBs) to forge a large number of User Equipment (UE) registration requests, consuming AMF resources. The data includes information related to the Stream Control Transmission Protocol (SCTP) and Internet Protocol (IP), such as addresses, ports, the number of packets, and the number of bytes, as well as signal data related to registration and authentication.
-UPF DoS Attack Data: Data of the DoS attack against the User Plane Function (UPF) in the 5GC user plane. Attackers flood the UPF with a large amount of illegal data traffic, involving the GPRS Tunneling Protocol User Plane (GTP - U) and User Datagram Protocol (UDP) in the transport layer. The data covers traffic feature information such as network throughput, packet size, and transmission duration.
-SMF DoS Attack Data: Data of the DoS attack against the Session Management Function (SMF) in the 5GC, involving both the user plane and the control plane. The attack forwards malicious traffic to the SMF by controlling the UPF. The protocols include GTP - U, UDP, and Hypertext Transfer Protocol (HTTP). The data also contains rich traffic feature information.
-(II) Normal Case Data
-A normal dataset corresponding to the Ng interface of the above - mentioned threat cases is provided for comparative analysis, helping researchers better identify abnormal traffic.
-III. Dataset Construction Method
-Data is collected based on a 5G network security experimental platform that complies with 3GPP specifications. Tools are designed and developed for potential malicious traffic in the RAN and 5GC semi - trusted domains. For example, the code of the simulated UE is modified to generate an AMF DoS attack tool, and tools like Bonesi and Hulk are used to generate UPF DoS and SMF DoS attack traffic. The 5GCID dataset is collected and organized by executing these tools on the experimental platform.
+# 5GCID：Data Set of 5GC Intrusion Detection System
+# 📂 I. Dataset Introduction
+
+The **5GCID (5GC Intrusion Detection System Data Set)** is specifically constructed for the research of **5G Core Network (5GC)** intrusion detection systems. With the widespread application of 5G networks, the 5GC faces numerous security threats. Existing deep-learning (DL)-based intrusion detection methods are restricted by the lack of suitable datasets. This dataset integrates data related to security vulnerabilities in the **Radio Access Network (RAN)** domain and the **5GC user domain**, providing strong support for 5GC intrusion detection research.
+
+---
+
+# 📦 II. Dataset Content
+
+## 🔐 (I) Threat Case Data
+
+### 🛑 AMF DoS Attack Data
+
+- Targets the **Access and Mobility Management Function (AMF)** in the 5GC control plane.
+- Simulates untrusted **Base Stations (gNBs)** forging large numbers of **User Equipment (UE)** registration requests to exhaust AMF resources.
+- Includes:
+  - SCTP/IP-level information: IP addresses, ports, packet and byte counts.
+  - Signal data related to registration and authentication.
+
+### 🛑 UPF DoS Attack Data
+
+- Targets the **User Plane Function (UPF)** in the 5GC user plane.
+- Attackers flood the UPF with illegal traffic.
+- Involves:
+  - **GTP-U** and **UDP** protocols.
+  - Traffic features: network throughput, packet size, transmission duration.
+
+### 🛑 SMF DoS Attack Data
+
+- Targets the **Session Management Function (SMF)**, affecting both user and control planes.
+- Malicious traffic is forwarded to SMF through UPF.
+- Protocols used: **GTP-U**, **UDP**, and **HTTP**.
+- Rich in traffic feature information.
+
+---
+
+## ✅ (II) Normal Case Data
+
+A normal dataset corresponding to the **Ng interface** of the above threat cases is provided. It is designed for **comparative analysis**, helping researchers better identify abnormal traffic.
+
+---
+
+# 🏗️ III. Dataset Construction Method
+
+The data was collected using a **5G network security experimental platform** that complies with **3GPP specifications**.
+
+Tools were designed and developed to simulate malicious traffic in the **RAN** and **5GC semi-trusted domains**:
+
+- The source code of a simulated **UE** was modified to produce an **AMF DoS** attack tool.
+- **Bonesi** and **HULK** tools were used to generate **UPF DoS** and **SMF DoS** attack traffic.
+
+> The **5GCID dataset** was generated by executing these tools on the experimental platform and organizing the resulting data.
+---
+
+# ⚠️ IV. Precautions
+
+- This dataset is **only for academic research** and **5G network security technology development**. 🚫 It is **prohibited** from being used for any **illegal purposes**.
+
+- When using the dataset, relevant **laws**, **regulations**, and **ethical norms** should be followed to protect **data privacy and security**.
+
+- Due to the continuous development of **5G network technology**, the dataset may have **limitations**.  It is necessary to **analyze and adjust** according to the **actual situation** when using it.
+
+
